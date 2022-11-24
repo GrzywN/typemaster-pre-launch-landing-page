@@ -10,7 +10,13 @@
   },
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "format": "prettier --write --ignore-unknown .",
+    "build": "parcel build",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown .",
+    "*.{js,css,md}": "prettier --write"
   },
   "repository": {
     "type": "git",
@@ -32,6 +38,9 @@
   },
   "homepage": "https://github.com/GrzywN/typemaster-pre-launch-landing-page#readme",
   "devDependencies": {
-    "parcel": "2.8.0"
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "parcel": "2.8.0",
+    "prettier": "2.8.0"
   }
 }
