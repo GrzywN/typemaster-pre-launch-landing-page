@@ -1,6 +1,11 @@
 /* Variables */
 
 :root {
+  --font-heading: var(--font-barlow);
+  --font-body: var(--font-barlow);
+
+  --font-barlow: 'Barlow', sans-serif;
+
   --clr-primary-600: #f16718;
   --clr-primary-200: #ff9b62;
   --clr-secondary-900: #162542;
@@ -17,28 +22,28 @@
 
 h1 {
   font-size: 3.5rem;
-  font-weight: black;
+  font-weight: 900;
   line-height: 3.5rem;
   letter-spacing: 0px;
 }
 
 h2 {
   font-size: 2rem;
-  font-weight: black;
+  font-weight: 900;
   line-height: 2.25rem;
   letter-spacing: 0px;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: black;
+  font-weight: 900;
   line-height: 1.75rem;
   letter-spacing: 0px;
 }
 
 p {
   font-size: 1rem;
-  font-weight: medium;
+  font-weight: 500;
   line-height: 1.625rem;
   letter-spacing: 0px;
 }
@@ -46,29 +51,25 @@ p {
 a,
 button {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.625rem;
   letter-spacing: 0px;
 }
 
-.heading {
+.Heading {
+  font-family: var(--font-heading);
   color: var(--clr-secondary-900);
   text-transform: uppercase;
 }
 
-.body {
-  color: var(--clr-secondary-200);
+.Body {
+  font-family: var(--font-body);
+  color: var(--clr-secondary-500);
 }
 
 /* Breakpoints */
 
-@media screen and (min-width: 640px) {
-}
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1024px) {
-}
-@media screen and (min-width: 1280px) {
-}
-@media screen and (min-width: 1536px) {
 }
