@@ -1,0 +1,74 @@
+/* Variables */
+
+:root {
+  --clr-primary-600: #f16718;
+  --clr-primary-200: #ff9b62;
+  --clr-secondary-900: #162542;
+  --clr-secondary-500: #7b8bad;
+
+  --clr-neutral-200: #e8eff2;
+  --clr-neutral-100: #ffffff;
+
+  --size-container: 90rem;
+  --size-container-padding: 69.375rem;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: black;
+  line-height: 3.5rem;
+  letter-spacing: 0px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: black;
+  line-height: 2.25rem;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: black;
+  line-height: 1.75rem;
+  letter-spacing: 0px;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: medium;
+  line-height: 1.625rem;
+  letter-spacing: 0px;
+}
+
+a,
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.625rem;
+  letter-spacing: 0px;
+}
+
+.heading {
+  color: var(--clr-secondary-900);
+  text-transform: uppercase;
+}
+
+.body {
+  color: var(--clr-secondary-200);
+}
+
+/* Breakpoints */
+
+@media screen and (min-width: 640px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1536px) {
+}
