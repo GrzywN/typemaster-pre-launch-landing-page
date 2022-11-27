@@ -31,7 +31,6 @@
 
 .Hero__image-wrapper {
   margin-left: auto;
-  transform: translateX(2rem);
 
   flex-shrink: 0;
 }
@@ -67,10 +66,6 @@
 
   .Hero__button-wrapper {
     margin-top: 2.438rem;
-  }
-
-  .Hero__image-wrapper {
-    transform: none;
   }
 
   .Hero__image {
