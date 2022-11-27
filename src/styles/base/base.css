@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  outline: 1px magenta dashed;
+}
+
+body {
+  --padding-x: 1.5rem;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+}

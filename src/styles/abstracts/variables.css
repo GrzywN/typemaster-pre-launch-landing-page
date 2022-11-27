@@ -1,0 +1,18 @@
+:root {
+  --font-heading: var(--font-barlow);
+  --font-text: var(--font-barlow);
+  --font-button: var(--font-barlow);
+
+  --font-barlow: 'Barlow', sans-serif;
+
+  --clr-primary-600: #f16718;
+  --clr-primary-200: #ff9b62;
+  --clr-secondary-900: #162542;
+  --clr-secondary-500: #7b8bad;
+
+  --clr-neutral-200: #e8eff2;
+  --clr-neutral-100: #ffffff;
+
+  --size-container: 90rem;
+  --size-container-padding: 69.375rem;
+}
