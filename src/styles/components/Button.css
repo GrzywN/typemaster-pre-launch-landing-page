@@ -2,6 +2,8 @@
   --padding-x: 0.875rem;
   --padding-y: 0.688rem;
 
+  cursor: pointer;
+
   font-family: var(--font-button);
   font-size: 1rem;
   font-weight: 700;
