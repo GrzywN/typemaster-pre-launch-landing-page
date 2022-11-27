@@ -21,8 +21,8 @@
     <main class="Container">
       <section class="Hero">
         <article class="Hero__body">
-          <h1 class="Heading Heading--lg">Typemaster keyboard</h1>
-          <p class="Text">
+          <h1 class="Hero__title Heading Heading--lg">Typemaster keyboard</h1>
+          <p class="Hero__description Text">
             Improve your productivity and gaming without breaking the bank. Upgrade to a high quality mechanical typing
             experience.
           </p>
@@ -31,15 +31,17 @@
             <p class="Text Text--bold">Release on 5/27</p>
           </div>
         </article>
-        <picture>
-          <source media="(min-width:768px)" srcset="./assets/tablet/image-keyboard.jpg" />
-          <source media="(min-width:1024px)" srcset="./assets/desktop/image-keyboard.jpg" />
-          <img
-            class="Hero__image"
-            src="./assets/mobile/image-keyboard.jpg"
-            alt="Gray mechanical keyboard laying on the desk."
-          />
-        </picture>
+        <div class="Hero__image-wrapper">
+          <picture>
+            <source media="(min-width:768px)" srcset="./assets/tablet/image-keyboard.jpg" />
+            <source media="(min-width:1024px)" srcset="./assets/desktop/image-keyboard.jpg" />
+            <img
+              class="Hero__image"
+              src="./assets/mobile/image-keyboard.jpg"
+              alt="Gray mechanical keyboard laying on the desk."
+            />
+          </picture>
+        </div>
       </section>
 
       <section class="GridSection">

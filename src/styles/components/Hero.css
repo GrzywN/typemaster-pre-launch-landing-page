@@ -1,0 +1,126 @@
+/*
+ * To change margin-top values, declare --hero-space-top custom property in the parent element.
+ * */
+
+.Hero {
+  --image-body-gap: 4rem;
+
+  margin-top: var(--hero-space-top, 4rem);
+
+  min-height: 42.562rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--image-body-gap);
+}
+
+.Hero__body {
+  min-height: 17.875rem;
+  max-width: 21.188rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Hero__button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Hero__image-wrapper {
+  margin-left: auto;
+  transform: translateX(2rem);
+
+  flex-shrink: 0;
+}
+
+.Hero__image {
+  --image-border-radius: 1.25rem;
+  --image-width: 23.25rem;
+  --image-height: 20.688rem;
+
+  width: var(--image-width);
+  height: var(--image-height);
+  border-top-left-radius: var(--image-border-radius);
+  border-bottom-left-radius: var(--image-border-radius);
+}
+
+@media screen and (min-width: 768px) {
+  .Hero {
+    --image-body-gap: 4.312rem;
+
+    min-height: 26.562rem;
+    flex-wrap: nowrap;
+  }
+
+  .Hero__body {
+    flex-shrink: 0;
+
+    gap: 0;
+  }
+
+  .Hero__description {
+    margin-top: 2.125rem;
+  }
+
+  .Hero__button-wrapper {
+    margin-top: 2.438rem;
+  }
+
+  .Hero__image-wrapper {
+    transform: none;
+  }
+
+  .Hero__image {
+    --image-width: auto;
+    --image-height: 26.562rem;
+
+    border-radius: var(--image-border-radius);
+
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .Hero {
+    --image-body-gap: 7.812rem;
+
+    margin-top: var(--hero-space-top, 5.188rem);
+  }
+
+  .Hero__body {
+    max-width: 27.812rem;
+  }
+
+  .Hero__description {
+    margin-top: 1.5rem;
+  }
+
+  .Hero__button-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  .Hero__image-wrapper {
+    position: relative;
+  }
+
+  .Hero__image-wrapper::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15.938rem;
+    height: 15rem;
+
+    transform: translateX(calc(100% + 1.875rem));
+    background-color: var(--clr-neutral-200);
+    border-radius: 1.25rem;
+  }
+
+  .Hero__image {
+    --image-height: 30rem;
+  }
+}
