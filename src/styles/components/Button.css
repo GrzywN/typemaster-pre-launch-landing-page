@@ -1,0 +1,48 @@
+.Button {
+  --padding-x: 0.875rem;
+  --padding-y: 0.688rem;
+
+  font-family: var(--font-button);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+
+  border-radius: 0.5rem;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: var(--padding-y) var(--padding-x);
+
+  transition: 200ms ease-in;
+  transition-property: color, background-color;
+}
+
+.Button--primary {
+  --bg-color: var(--clr-primary-600);
+  --text-color: var(--clr-neutral-100);
+}
+
+.Button--primary:hover,
+.Button--primary:focus-visible {
+  --bg-color: var(--clr-primary-200);
+}
+
+.Button--plain {
+  --bg-color: var(--clr-neutral-200);
+  --text-color: var(--clr-secondary-900);
+}
+
+.Button--plain:hover,
+.Button--plain:focus-visible {
+  --text-color: var(--clr-neutral-200);
+  --bg-color: var(--clr-secondary-900);
+}
+
+@media screen and (min-width: 768px) {
+  .Button {
+    --padding-x: 1.625rem;
+    --padding-y: 1rem;
+  }
+}
