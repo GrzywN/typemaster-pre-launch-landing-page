@@ -9,9 +9,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "parcel",
+    "dev": "parcel --no-cache",
     "format": "prettier --write --ignore-unknown .",
-    "build": "parcel build",
+    "build": "parcel build --no-cache",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/GrzywN/typemaster-pre-launch-landing-page#readme",
   "devDependencies": {
+    "@parcel/resolver-glob": "^2.8.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "parcel": "2.8.0",
