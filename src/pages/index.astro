@@ -1,3 +1,7 @@
+---
+import '../styles/index.css';
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,13 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap" />
-    <link rel="stylesheet" href="./styles/index.css" />
 
     <title>Frontend Mentor | Typemaster pre-launch landing page</title>
   </head>
   <body>
     <header class="Header">
-      <img class="Header__logo" src="./assets/shared/logo.svg" alt="" />
+      <img class="Header__logo" src="/shared/logo.svg" alt="" />
       <a class="Button Button--plain" href="#">Pre-order now</a>
     </header>
 
@@ -33,11 +36,11 @@
         </article>
         <div class="Hero__image-wrapper">
           <picture>
-            <source media="(min-width:768px)" srcset="./assets/tablet/image-keyboard.jpg" />
-            <source media="(min-width:1024px)" srcset="./assets/desktop/image-keyboard.jpg" />
+            <source media="(min-width:768px)" srcset="/tablet/image-keyboard.jpg" />
+            <source media="(min-width:1024px)" srcset="/desktop/image-keyboard.jpg" />
             <img
               class="Hero__image"
-              src="./assets/mobile/image-keyboard.jpg"
+              src="/mobile/image-keyboard.jpg"
               alt="Gray mechanical keyboard laying on the desk."
             />
           </picture>
@@ -47,22 +50,22 @@
       <section class="GridSection">
         <div class="GridSection__tile GridSection__tile--slim">
           <picture>
-            <source media="(min-width:768px)" srcset="./assets/tablet/image-phone-and-keyboard.jpg" />
-            <source media="(min-width:1024px)" srcset="./assets/desktop/image-phone-and-keyboard.jpg" />
+            <source media="(min-width:768px)" srcset="/tablet/image-phone-and-keyboard.jpg" />
+            <source media="(min-width:1024px)" srcset="/desktop/image-phone-and-keyboard.jpg" />
             <img
               class="GridSection__image GridSection__image--slim"
-              src="./assets/mobile/image-phone-and-keyboard.jpg"
+              src="/mobile/image-phone-and-keyboard.jpg"
               alt="Desk with a mechanical keyboard, palmrest and a mobile phone on it."
             />
           </picture>
         </div>
         <div class="GridSection__tile GridSection__tile--wide">
           <picture>
-            <source media="(min-width:768px)" srcset="./assets/tablet/image-glass-and-keyboard.jpg" />
-            <source media="(min-width:1024px)" srcset="./assets/desktop/image-glass-and-keyboard.jpg" />
+            <source media="(min-width:768px)" srcset="/tablet/image-glass-and-keyboard.jpg" />
+            <source media="(min-width:1024px)" srcset="/desktop/image-glass-and-keyboard.jpg" />
             <img
               class="GridSection__image GridSection__image--wide"
-              src="./assets/mobile/image-glass-and-keyboard.jpg"
+              src="/mobile/image-glass-and-keyboard.jpg"
               alt="Desk with a mechanical keyboard, notebook, profiled mouse with mousepad and a glass of water on it."
             />
           </picture>
@@ -78,7 +81,7 @@
 
       <section class="CardSection">
         <div class="Card">
-          <img class="Card__icon" src="./assets/shared/icon-compatible.svg" alt="" aria-hidden />
+          <img class="Card__icon" src="/shared/icon-compatible.svg" alt="" aria-hidden />
           <h3 class="Heading Heading--sm">Highly compatible</h3>
           <p class="Text">
             Easy to use and works well with all major computer brands, gaming consoles and mobile devices. Plug & play,
@@ -86,7 +89,7 @@
           </p>
         </div>
         <div class="Card">
-          <img class="Card__icon" src="./assets/shared/icon-bluetooth.svg" alt="" aria-hidden />
+          <img class="Card__icon" src="/shared/icon-bluetooth.svg" alt="" aria-hidden />
           <h3 class="Heading">Wireless with bluetooth</h3>
           <p class="Text">
             Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. Simply plug
@@ -94,7 +97,7 @@
           </p>
         </div>
         <div class="Card">
-          <img class="Card__icon" src="./assets/shared/icon-battery.svg" alt="" aria-hidden />
+          <img class="Card__icon" src="/shared/icon-battery.svg" alt="" aria-hidden />
           <h3 class="Heading">High capacity battery</h3>
           <p class="Text">
             Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. Enjoy
@@ -102,7 +105,7 @@
           </p>
         </div>
         <div class="Card">
-          <img class="Card__icon" src="./assets/shared/icon-light.svg" alt="" aria-hidden />
+          <img class="Card__icon" src="/shared/icon-light.svg" alt="" aria-hidden />
           <h3 class="Heading">RGB backlit modes</h3>
           <p class="Text">
             Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the
@@ -113,7 +116,7 @@
     </main>
 
     <footer class="Footer">
-      <p class="Text"><strong class="Text--bold">Typemaster 2021 </strong>| All Rights Reserved</p>
+      <p class="Text"><strong class="Text--bold">Typemaster 2021</strong>| All Rights Reserved</p>
     </footer>
   </body>
 </html>
